@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+<title>Register Form Design</title>
+    <style type="text/css">
+        body{
+            background: url(b2.jpg)no-repeat center center fixed;
+            background-blend-mode: darken;
+
+        }
+        .box{
+           
+            width: 40%;
+            height: 150%;
+           margin-top:5%;
+           margin-left: 60%;
+           box-sizing: border-box;
+           position: absolute;
+           justify-content: center;
+
+           
+        }
+        h1{
+            color: white;
+        }
+
+        p{
+            color: white;
+            font-weight: bold;
+        }
+        input[type="password"],input[type="Email"],input[type="text"]{
+            padding: 10px 25px;
+            border: none;
+            outline: none;
+            background: none;
+            margin-top: 10px;
+            color: white;
+        }
+        input[type="submit"]{
+            background: dodgerblue;
+            border: none;
+            outline: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: yellow;
+        }
+        input[type="submit"]:hover{
+            color: blue;
+            background: white;
+        }
+    </style>
+     <script type="text/javascript" >
+         function myfun() {
+             // body...
+             console.log("clear function called :: ");
+             var uname1= document.getElementById("name").value;
+             var email1=document.getElementById("email").value;
+             var upswd1=document.getElementById("pwd1").value;
+             var upswd2=document.getElementById("pwd2").value;
+
+
+
+        if(uname1==null || uname1=="" ){
+                  document.getElementById("errorBox").innerHTML =
+                   "enter the user name";
+                 return false;
+        }
+
+        if(email1==null || email1==""){
+                  document.getElementById("errorBox").innerHTML =
+                   "enter the email";
+                 return false;
+        }
+
+        if(upswd1==null || upswd1=="" ){
+                  document.getElementById("errorBox").innerHTML =
+                   "enter the password";
+                 return false;
+        }
+
+        if(upswd2==null || upswd2==""){
+                  document.getElementById("errorBox").innerHTML =
+                   "enter the password";
+                 return false;}
+
+        if(upswd1 != upswd2){
+                  document.getElementById("errorBox").innerHTML =
+                   "password dont match";
+                 return false;}
+
+        
+
+        if (uname1 != '' && upswd1 != '' && upswd2 != '' && email1 != '' && upswd1 == upswd2)
+
+
+          alert("Register successfull");
+                         
+
+        }
+
+         
+
+     </script>
+     
+
+<body>
+
+    <div class="box">
+   
+        <h1>Register Here</h1>
+        <?php
+
+            if(($_SESSION['status'])
+        ?>
+
+        <form name="myform2"  action ="index.php" method="POST"  >
+
+            <p>Username</p>
+            <input type="text" name="uname1" id ="name" placeholder="Enter Username" required="">
+
+            <p>Email</p>
+            <input type="Email" name="email1" id="email" placeholder="Enter email id" required="">
+
+            <p>Password</p>
+            <input type="password" name="upswd1" id="pwd1" placeholder="Enter Password" required="">
+
+            <p>Retype Password</p>
+            <input type="password" name="upswd2" id="pwd2" placeholder="Re-Enter Password" required="">
+            <br><br>
+
+            <input type="submit" name="" value="Register" onclick="myfun()" >
+
+            <br><br>
+            <a href="index.html">existing user, login !?</a>
+        </form>
+        
+    </div>
+</body>
+   
+    
+   
+
+</body>
+</head>
+</html>

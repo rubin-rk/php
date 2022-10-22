@@ -1,0 +1,73 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(b2.jpg)no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-backgoround-size: cover;
+	-o-background-size: cover;
+	background-blend-mode: darken;
+}
+.box{
+	background: linear-gradient(white,yellow);
+	-webkit-background-size: cover;
+	padding: 70px 30px;
+	position: absolute;
+	transform: translate(10%, -30%);
+	box-sizing: border-box;
+	top: 50%;
+	left:10%;
+}
+.user{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -50px;
+	border-radius: 50px;
+
+}
+input{
+	width: 100%;
+	margin-bottom: 10px;
+
+}
+input[type="text"],input[type="password"],input[type="email"]
+{
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #FFF;
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 16px;
+	margin-top: 10px;
+}
+input[type="submit"]{
+	background: #005A9C;
+	border-radius: 15px;
+	height: 40px;
+	border: none;
+	outline: none;
+	color: #FFF;
+	margin-top: 10px;
+}
+input[type="submit"]:hover{
+	cursor: pointer;
+	background: #0000FF;
+
+}
+a{
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFF;
+}
+a:hover{
+	color: yellow;
+}
+h1{
+	color: #FFF;
+}
+p{
+	color: #FFF;
+	font-weight: bold;
+}

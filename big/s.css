@@ -1,0 +1,131 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background:rgba(0, 0, 0, 0.7)url(im12.png)no-repeat center center fixed;
+	-webkit-background-size: cover;
+	box-sizing: border-box;
+	background-blend-mode: darken;
+	
+
+position: relative;
+
+
+}
+nav{
+	display: flex;
+	
+	background:-webkit-linear-gradient(darkblue,skyblue);
+
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+nav ul{
+	display: flex;
+	list-style-type: none;
+
+}
+nav ul li{
+	margin: 0 20px;
+	padding: 10px 20px;
+	
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover{
+background-color: darkblue;
+}
+button{
+	padding: 5px 5px;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	color: white;
+	font-weight: bold;
+}
+button:active{
+	transform: scale(.95);
+
+}
+.signin{
+background: darkblue;
+
+}
+.signout{
+	background: darkblue;
+
+}
+.user{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+
+	border-radius: 50px;
+
+}
+.user:active{
+	transform: scale(.95) ;
+}
+.container{
+	color: yellow;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+span{
+	font-size: 7rem;
+	font-weight: bold;
+	font-family: sans-serif;
+	letter-spacing: 10px;
+	text-shadow: 0px 1px 0px #CCC,
+	 0px 2px 0px #CCC,
+	  0px 3px 0px #CCC,
+	   0px 4px 0px #CCC,
+	    0px 5px 0px #CCC,
+	     0px 6px 0px #CCC,
+	      0px 7px 0px #CCC;
+	      animation: 5s move linear infinite;
+
+}
+@keyframes move{
+	50%{
+		transform: translateY(-50px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+
+}
+sapn:nth-child(1){
+	animation-delay: .5s;
+}
+sapn:nth-child(2){
+	animation-delay: .5s;
+}
+sapn:nth-child(3){
+	animation-delay: .5s;
+}
+sapn:nth-child(4){
+	animation-delay: .5s;
+}
+sapn:nth-child(5){
+	animation-delay: .5s;
+}
+sapn:nth-child(6){
+	animation-delay: .5s;
+}
+sapn:nth-child(7){
+	animation-delay: .5s;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
